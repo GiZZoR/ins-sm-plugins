@@ -27,3 +27,23 @@ Options:
 2 - Give new player the same supply as lowest member in team (Useful for multiple rounds of coop play)
 3 - Give new player the team average of supply points (sum all players supply points divided by players)
 ```
+## [INS] Basic Intel
+Very simple plugin intended for coop, to report remaining bot count, and bot difficulty.
+
+###Changelog
+* 0.3 - Added bot difficulty
+* 0.2 - Fixed broken messages.
+* 0.1 - Initial build. 
+
+###Usage
+Say "!intel" in chat
+
+## [INS] Kill Notice
+Plugin to show kill notice (death message) in Insurgency.
+Players opt-in to have notices displayed in chat area.
+SteamID of player is stored in SQL database.
+
+###Changelog
+* 0.3 - Add SQL. Death = Hook post.
+* 0.2 - Fixed removing unconnected players from array
+* 0.1a - Added test for suicides
