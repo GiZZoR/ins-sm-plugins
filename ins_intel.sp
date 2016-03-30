@@ -26,8 +26,6 @@ public Action:intel_block_commands(client, const String:command[], args)
         int clientTeam;
         clientTeam = GetClientTeam(client);
         if (strcmp(message,"!intel",false) == 0) {
-                ReplySource oldRS = GetCmdReplySource();
-                SetCmdReplySource(SM_REPLY_TO_CHAT);
                 new diff_int =  GetConVarInt(g_cvBotDiff);
                 char diff_text[32];
                 if (diff_int == 0) diff_text = "Forgiving";
@@ -45,17 +43,16 @@ public Action:intel_block_commands(client, const String:command[], args)
                                 }
                         }
                 }
-                ReplyToCommand(client,"AI Difficulty: %s", diff_text);
+                PrintToChat(client,"AI Difficulty: %s", diff_text);
                 if (BotAlive == 0) {
-                        ReplyToCommand(client,"Intel: Recon shows that all %d of the enemy are dead.",BotCount);
+                        PrintToChat(client,"Intel: Recon shows that all %d of the enemy are dead.",BotCount);
                 } else {
                         if (BotAlive == 1) {
-                                ReplyToCommand(client,"Intel: Excercise caution soldier, %d of the %d enemy is still alive",BotAlive,BotCount);
+                                PrintToChat(client,"Intel: Excercise caution soldier, %d of the %d enemy is still alive",BotAlive,BotCount);
                         } else {
-                                ReplyToCommand(client,"Intel: Excercise caution soldier, %d of the %d enemy are still alive",BotAlive,BotCount);
+                                PrintToChat(client,"Intel: Excercise caution soldier, %d of the %d enemy are still alive",BotAlive,BotCount);
                         }
                 }
-                SetCmdReplySource(oldRS);
                 return Plugin_Stop;
         }
         return Plugin_Continue;
