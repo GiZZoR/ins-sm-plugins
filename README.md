@@ -47,3 +47,6 @@ SteamID of player is stored in SQL database.
 * 0.3 - Add SQL. Death = Hook post.
 * 0.2 - Fixed removing unconnected players from array
 * 0.1a - Added test for suicides
+
+###Usage
+Say "!on" or "!off" in chat to turn notices on/off
