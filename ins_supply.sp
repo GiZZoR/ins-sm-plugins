@@ -130,6 +130,9 @@ public Action:Event_PlayerTeam(Handle:event, const String:name[], bool:dontBroad
 	char SteamID[64];
 	GetClientAuthId(client, AuthId_Steam2, SteamID, sizeof(SteamID));
 	
+	// Don't process bots
+	if (StrEqual(SteamID,"BOT",false) == true) return Plugin_Handled;
+	
 	// Get team player is joining
 	new team = GetEventInt(event, "team");
 
@@ -140,7 +143,7 @@ public Action:Event_PlayerTeam(Handle:event, const String:name[], bool:dontBroad
 		if(KvJumpToKey(g_S_KV_Players,SteamID,false) == true)
 		{
 			// Fetch player's previous supply count from KV
-			newTokens = KvGetNum(g_S_KV_Players,"supply",10);
+			newTokens = KvGetNum(g_S_KV_Players,"supply",10); 
 		}
 	}
 
