@@ -1,4 +1,4 @@
-# Sourcemod plugins by GiZZoR for Insurgency (Standalone)
+# Sourcemod plugins for Insurgency (Standalone)
 
 ## [INS] Supply Manager
 This plugin will set the supply points (tokens) for players on connect to server.
