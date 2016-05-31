@@ -37,16 +37,3 @@ Very simple plugin intended for coop, to report remaining bot count, and bot dif
 
 ###Usage
 Say "!intel" in chat
-
-## [INS] Kill Notice
-Plugin to show kill notice (death message) in Insurgency.
-Players opt-in to have notices displayed in chat area.
-SteamID of player is stored in SQL database.
-
-###Changelog
-* 0.3 - Add SQL. Death = Hook post.
-* 0.2 - Fixed removing unconnected players from array
-* 0.1a - Added test for suicides
-
-###Usage
-Say "!on" or "!off" in chat to turn notices on/off
