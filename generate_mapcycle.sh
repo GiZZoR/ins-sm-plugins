@@ -8,12 +8,6 @@ WORKSHOP="$SRCDS_PATH/steamapps/workshop/content/222880"
 COOPMODES="Conquer Checkpoint Hunt Outpost Survival"
 PVPMODES="Ambush Battle Elimination Firefight Flashpoint Infiltrate Invasion Occupy Push Skirmish Strike"
 
-## Options
-# --coop
-# --pvp
-# --all
-# --modes=
-
 usage() {
         printf "[USAGE] ./generate_mapcycle.sh [opts]\n"
         printf "Opts:\n"
