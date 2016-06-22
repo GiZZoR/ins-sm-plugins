@@ -39,7 +39,7 @@ public void OnPluginStart()
   g_S_Enabled = CreateConVar("sm_supply_enabled" , "1", "Sets whether the plugin is enabled", FCVAR_NONE, true, 0.0, true, 1.0);
 
   // "Int": sm_supply_base; Number of supply points to give players. Default: 12
-  g_S_Base_Points = CreateConVar("sm_supply_base" , "12", "Base / Starting supply points", FCVAR_NONE);
+  g_S_Base_Points = CreateConVar("sm_supply_base" , "12", "Base / Starting supply points", FCVAR_NOTIFY);
 
   // "Boolean": sm_supply_restore; Enable/disable restoring player's gained supply points. Default: 1 (Enabled)
   g_S_Rejoin = CreateConVar("sm_supply_restore", "1", "Restore points gained by player on reconnect", FCVAR_NONE, true, 0.0, true, 1.0);
