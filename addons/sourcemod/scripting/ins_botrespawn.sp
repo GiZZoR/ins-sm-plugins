@@ -1,3 +1,9 @@
+/*
+  Source from https://forums.alliedmods.net/showthread.php?p=1777154 [CSS/CSP/CSGO/TF2] Autorespawn [1.4 10/November/2013] by shavit
+  Rewritten by GiZZoR for Insurgency
+  Using library functions created by Jared Ballou
+*/
+
 #include <sourcemod>
 #include <sdktools>
 #include <insurgency>
